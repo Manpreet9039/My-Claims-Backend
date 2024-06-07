@@ -27,7 +27,6 @@ public class EmpInfoModel {
 	
 	@Column
 	private String email;
-	
 		
 	@Column
 	private Long empCode;
@@ -35,18 +34,19 @@ public class EmpInfoModel {
 	@Column
 	private String manager;
 	
-	
 	@Column
 	private Long mobile;
 	
 	@Column
-	private Long wbs;
+	private String wbsId;
 	
 	@Column
 	private String typeOfExpense;
 	
 	@Column
 	private String description;
+	
+	
 	
 	
 

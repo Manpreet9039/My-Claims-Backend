@@ -1,6 +1,8 @@
 package com.emp.org.service;
 
 import java.util.List;
+import java.util.Optional;
+
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 import com.emp.org.model.EmpInfoModel;
@@ -20,6 +22,11 @@ public class EmpInfoServiceImpl implements EmpInfoService {
     @Override
     public EmpInfoModel saveEmpInfo(EmpInfoModel empInfoModel) {
         return empInfoRepository.save(empInfoModel);
+    }
+
+    @Override
+    public List<EmpInfoModel> getEmpInfoByEmpCode(Long empCode) {
+        return empInfoRepository.findByEmpCode(empCode);
     }
 
 }
